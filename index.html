@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Concierge Marbella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #c7aa72;
+      --dark: #2e2e2e;
+      --beige: #f9f6f2;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--beige);
+      color: var(--dark);
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #f9f6f2, #ede6db);
+      padding: 3rem 1rem;
+      animation: fadeIn 1.2s ease-out;
+    }
+    .hero img {
+      width: 140px;
+      max-width: 90%;
+      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      margin: 0.5rem 0;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 600px;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      background-color: var(--dark);
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #1a1a1a;
+    }
+    .section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .section p, .section li {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #f1ede6;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACcCAYAAABgXPibAAAABmJLR0QA/wD/AP+gvaeTAAAA..." alt="Crypto Concierge Marbella Logo" />
+    <h1>Crypto Concierge Marbella</h1>
+    <p>Discreet in-person onboarding for crypto investors, HNWIs, and expats in Spain’s luxury capital.</p>
+    <a href="mailto:ccmarbella@proton.me" class="cta-button">Request Consultation</a>
+  </section>
+
+  <div class="section">
+    <h2>What We Do</h2>
+    <p><strong>Cold Wallet Setup:</strong> In-person secure wallet installs & recovery protocols.</p>
+    <p><strong>Private Consultations:</strong> Education on privacy, multisig, VPNs, security & burner phones.</p>
+    <p><strong>OTC Desk Access:</strong> Buy/sell crypto via trusted OTC partners.</p>
+    <p><strong>ATM Integrations:</strong> Local ATM onboarding — or bring one to your venue.</p>
+  </div>
+
+  <div class="section">
+    <h2>Why Marbella</h2>
+    <p>Crypto adoption is rising, but secure, local onboarding is rare. Marbella’s high-end lifestyle, expat community and real estate make it ideal for a trusted in-person solution.</p>
+  </div>
+
+  <div class="section">
+    <h2>Partner With Us</h2>
+    <p>We collaborate with ATM operators, car rentals, real estate, golf clubs and private venues. Current opportunities include:</p>
+    <ul>
+      <li>Golden Mile Real Estate Agencies</li>
+      <li>Aloha Golf Club</li>
+      <li>Luxury Auto Rentals – Puerto Banús</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Crypto Concierge Marbella — Private, Non-Custodial, Trust-First
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
