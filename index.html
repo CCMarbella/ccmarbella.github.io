@@ -6,51 +6,74 @@
   <title>Crypto Concierge Marbella</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #3a2d0c;
+      --background: #f8f5f0;
+      --accent: #d4af37;
+    }
     body {
       margin: 0;
       padding: 0;
+      background: var(--background);
       font-family: 'Inter', sans-serif;
-      background: #f8f5f0;
-      color: #2a2a2a;
+      color: #333;
     }
     header {
       text-align: center;
-      padding: 3rem 1rem 1.5rem;
+      padding: 3rem 1rem 2rem;
+      background: white;
+      border-bottom: 1px solid #eee;
     }
     header img {
       width: 80px;
       margin-bottom: 1rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: #3a2d0c;
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin: 0.5rem 0;
     }
     header p {
       font-size: 1.1rem;
-      color: #555;
-      margin-top: 0.5rem;
+      color: #666;
     }
     .section {
-      max-width: 800px;
-      margin: 2rem auto;
+      max-width: 900px;
+      margin: 2.5rem auto;
       padding: 0 1.5rem;
     }
     .section h2 {
-      font-size: 1.6rem;
+      font-family: 'Lora', serif;
+      font-size: 1.7rem;
+      color: var(--primary);
       margin-bottom: 1rem;
-      color: #3a2d0c;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
     }
     .section p, .section li {
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.6;
       color: #333;
     }
     ul {
       padding-left: 1.5rem;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta a {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: #2e230a;
     }
     footer {
       background: #eae4d9;
@@ -59,12 +82,13 @@
       font-size: 0.9rem;
       color: #555;
     }
-    a {
-      color: #946c00;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .section h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
@@ -77,32 +101,30 @@
 
   <div class="section">
     <h2>What We Do</h2>
-    <p><strong>Cold Wallet Setup:</strong> Secure, in-person hardware wallet configuration & seed phrase safety.</p>
-    <p><strong>Private Consultations:</strong> Crypto privacy, mobile security, multisig wallets, VPNs, burner phones.</p>
-    <p><strong>OTC Introductions:</strong> Direct access to trusted OTC desks for high-volume buy/sell.</p>
-    <p><strong>Crypto ATM Integration:</strong> Access BTC, ETH, or stablecoins locally — and we help bring the ATM to you.</p>
+    <p><strong>Cold Wallet Setup:</strong> In-person secure wallet installation and backup procedures.</p>
+    <p><strong>Private Consultations:</strong> Education on crypto privacy, mobile security, multisig, VPNs, and burner devices.</p>
+    <p><strong>OTC Introductions:</strong> Direct access to verified OTC desks for high-volume buys/sells.</p>
+    <p><strong>Crypto ATM Integration:</strong> Onboard at physical ATM locations — or host one at your venue.</p>
   </div>
 
   <div class="section">
     <h2>Why Marbella</h2>
-    <p>Crypto adoption is growing, but secure, in-person onboarding is still rare. Marbella’s luxury lifestyle, expat presence, and digital nomad scene make it the ideal location for discreet, professional crypto services.</p>
+    <p>With a thriving expat scene and affluent clientele, Marbella is ideal for discreet, in-person onboarding to crypto. Our service caters to those who value trust, privacy, and local support over online exchanges.</p>
   </div>
 
   <div class="section">
     <h2>Partner With Us</h2>
-    <p>We collaborate with ATM operators, premium venues, and service providers. Current sample sites include:</p>
+    <p>We collaborate with ATM operators and luxury venues. Sample locations include:</p>
     <ul>
       <li>Aloha Golf Club</li>
-      <li>Marbella Luxury Car Rentals</li>
       <li>Golden Mile Real Estate Agencies</li>
+      <li>Marbella Luxury Car Rentals</li>
     </ul>
-    <p>We're seeking high-footfall luxury venues and compliance-first ATM providers for long-term partnerships.</p>
+    <p>We're seeking high-visibility venues and ATM providers for long-term collaborations.</p>
   </div>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ccmarbella@proton.me">ccmarbella@proton.me</a></p>
-    <p>All services are private and by request only. No custodial services. Privacy-first, trust-focused.</p>
+  <div class="section cta">
+    <a href="mailto:ccmarbella@proton.me">Request Consultation</a>
   </div>
 
   <footer>
