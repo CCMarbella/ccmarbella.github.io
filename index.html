@@ -11,6 +11,9 @@
       --dark: #2e2e2e;
       --beige: #f9f6f2;
     }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -23,22 +26,26 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to bottom right, #f9f6f2, #ede6db);
-      padding: 2rem;
+      padding: 3rem 1rem;
+      animation: fadeIn 1s ease-in-out;
     }
     .hero img {
-      width: 100px;
-      margin-bottom: 1.5rem;
+      width: 140px;
+      max-width: 90%;
+      margin-bottom: 1.8rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       margin: 0.5rem 0;
       color: var(--dark);
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: #444;
       max-width: 600px;
     }
@@ -61,6 +68,7 @@
       max-width: 900px;
       margin: 4rem auto;
       padding: 0 1.5rem;
+      animation: fadeIn 1s ease-in-out;
     }
     .section h2 {
       font-family: 'Playfair Display', serif;
@@ -84,11 +92,15 @@
       font-size: 0.9rem;
       color: #555;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <section class="hero">
-    <img src="logo.png" alt="Crypto Concierge Marbella Logo" />
+    <img src="logo-smooth.png" alt="Crypto Concierge Marbella Logo" />
     <h1>Crypto Concierge Marbella</h1>
     <p>Discreet in-person onboarding for crypto investors, HNWIs, and expats in Spain’s luxury capital.</p>
     <a href="mailto:ccmarbella@proton.me" class="cta-button">Request Consultation</a>
