@@ -6,68 +6,82 @@
   <title>Crypto Concierge Marbella</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom right, #f9f6ef, #e7d9c8);
       color: #2a2a2a;
-      text-align: center;
-      padding: 2rem 1rem;
     }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1rem 6rem;
+    }
+
     .logo {
-      width: 90px;
-      margin: 0 auto 1.5rem;
+      width: 140px;
+      height: auto;
+      margin-bottom: 2rem;
       display: block;
     }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
+
     .tagline {
-      max-width: 380px;
+      font-size: 1.25rem;
+      max-width: 480px;
       margin: 1rem auto 2rem;
-      font-size: 1rem;
-      color: #333;
+      text-align: center;
     }
+
     .cta-button {
       background: #1e1e1e;
       color: #fff;
-      padding: 0.75rem 1.5rem;
-      font-size: 0.95rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      margin-bottom: 3rem;
       display: inline-block;
+      margin-bottom: 4rem;
     }
+
     .section {
-      max-width: 420px;
+      max-width: 620px;
       margin: 0 auto;
-      padding-top: 2rem;
+      padding: 2rem 1rem 5rem;
     }
+
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.5rem;
+      text-align: center;
     }
+
     p {
-      font-size: 0.96rem;
-      margin-bottom: 1rem;
-      line-height: 1.6;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: left;
     }
-    strong { font-weight: 600; }
+
+    strong {
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Crypto Concierge Marbella Logo" class="logo" />
-  <h1>Crypto Concierge Marbella</h1>
-  <p class="tagline">Discreet in-person onboarding for crypto investors, HNWIs, and expats in Spain’s luxury capital.</p>
-  <a class="cta-button" href="mailto:ccmarbella@proton.me">Request Consultation</a>
+  <main>
+    <img src="logo.png" alt="Crypto Concierge Marbella Logo" class="logo" />
+    <p class="tagline">Discreet in-person onboarding for crypto investors, HNWIs, and expats in Spain’s luxury capital.</p>
+    <a class="cta-button" href="mailto:ccmarbella@proton.me">Request Consultation</a>
+  </main>
 
   <div class="section">
     <h2>What We Do</h2>
