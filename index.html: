@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Concierge Marbella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f9f6ef, #e7d9c8);
+      color: #2a2a2a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    .logo {
+      width: 90px;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0.5rem 0;
+      animation: fadeIn 1s ease-out 0.3s forwards;
+    }
+    .tagline {
+      text-align: center;
+      max-width: 380px;
+      margin: 1rem 0 2rem;
+      font-size: 1rem;
+      color: #333;
+      animation: fadeIn 1s ease-out 0.6s forwards;
+    }
+    .cta-button {
+      background: #1e1e1e;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-bottom: 3rem;
+      animation: fadeInUp 1s ease-out 0.9s forwards;
+    }
+    .section {
+      max-width: 420px;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.96rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    strong {
+      font-weight: 600;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Crypto Concierge Marbella Logo" class="logo" />
+  <h1>Crypto Concierge Marbella</h1>
+  <p class="tagline">Discreet in-person onboarding for crypto investors, HNWIs, and expats in Spain’s luxury capital.</p>
+  <a class="cta-button" href="mailto:ccmarbella@proton.me">Request Consultation</a>
+
+  <div class="section">
+    <h2>What We Do</h2>
+    <p><strong>Cold Wallet Setup:</strong> In-person secure wallet installs & recovery protocols.</p>
+    <p><strong>Private Consultations:</strong> Education on privacy, multisig, VPNs, security & burner phones.</p>
+    <p><strong>OTC Desk Access:</strong> Buy/sell crypto via trusted OTC partners.</p>
+    <p><strong>ATM Integrations:</strong> Local ATM onboarding — or bring one to your venue.</p>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {{ threshold: 0.1 }});
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
