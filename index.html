@@ -4,28 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Concierge Marbella</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --beige-light: #f9f6ef;
-      --beige-dark: #e9dfd2;
-      --accent: #3a3a3a;
-      --text: #2c2c2c;
-      --font-main: 'Inter', sans-serif;
+      --bg-light: #f8f4ed;
+      --bg-dark: #eae4d8;
+      --text-dark: #1f1f1f;
+      --accent: #7a5c2e;
+      --font-body: 'Inter', sans-serif;
       --font-heading: 'Playfair Display', serif;
     }
 
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, var(--beige-light), var(--beige-dark));
-      font-family: var(--font-main);
-      color: var(--text);
+      font-family: var(--font-body);
+      background: linear-gradient(to bottom right, var(--bg-light), var(--bg-dark));
+      color: var(--text-dark);
     }
 
-    main {
+    header {
       text-align: center;
-      padding: 7rem 1.5rem 4rem;
+      padding: 5rem 2rem 3rem;
     }
 
     .logo {
@@ -35,22 +34,23 @@
 
     .tagline {
       font-family: var(--font-heading);
-      font-size: 1.75rem;
-      max-width: 700px;
+      font-size: 2rem;
+      font-weight: 500;
+      max-width: 800px;
       margin: 0 auto 2.5rem;
-      color: var(--accent);
+      line-height: 1.4;
+      color: var(--text-dark);
     }
 
     .cta-button {
-      background: #1c1c1c;
+      background: var(--text-dark);
       color: white;
-      padding: 1rem 2rem;
+      padding: 0.9rem 2rem;
       font-size: 1.1rem;
       font-weight: 600;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: background 0.3s ease;
     }
 
@@ -58,71 +58,68 @@
       background: #333;
     }
 
-    .section {
+    section {
       max-width: 850px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
 
     h2 {
       font-family: var(--font-heading);
       font-size: 2rem;
+      color: var(--accent);
       margin-bottom: 1.5rem;
       text-align: center;
-      color: var(--accent);
     }
 
     p {
-      font-size: 1.2rem;
-      line-height: 1.9;
+      font-size: 1.15rem;
+      line-height: 1.85;
       margin-bottom: 2rem;
       text-align: justify;
     }
 
-    strong {
-      font-weight: 600;
-    }
-
     footer {
-      background: #f2eee6;
-      color: #666;
+      background: #f1ece3;
       text-align: center;
-      font-size: 0.95rem;
       padding: 2rem 1rem;
-      margin-top: 4rem;
-      border-top: 1px solid #ddd;
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-  <main>
+
+  <header>
     <img src="logo.png" alt="Crypto Concierge Marbella Logo" class="logo" />
-    <p class="tagline">Private crypto onboarding, ATM placement, and security consultations — discreetly executed in Marbella.</p>
+    <p class="tagline">
+      Private crypto onboarding, ATM placements, and vault-grade security consultations — tailored for Marbella’s luxury lifestyle.
+    </p>
     <a class="cta-button" href="mailto:ccmarbella@proton.me">Request Consultation</a>
-  </main>
+  </header>
 
-  <div class="section">
+  <section>
     <h2>What We Do</h2>
-    <p><strong>Cold Wallet Setup:</strong> We help you establish complete control over your crypto assets using industry-leading hardware wallets like Ledger, Trezor, and Foundation. Every setup is offline, personalized, and focused on long-term asset security. We also advise on metal backups, hidden wallets, and redundant storage systems.</p>
+    <p><strong>Cold Wallet Setup:</strong> Configure your hardware wallet securely — in-person, air-gapped, and privacy-first. We support Ledger, Trezor, Passport, and more with options for hidden wallets and metal backups.</p>
+    <p><strong>Private Consultations:</strong> Learn to secure your digital life. From pseudonymous DeFi use to burner devices and multisig, we tailor everything to your threat model and skill level.</p>
+    <p><strong>ATM Placements:</strong> We help install Bitcoin ATMs in luxury venues, car showrooms, and golf clubs — complete with compliance, licensing, and secure partnerships. Or we show you where to access discreet machines locally.</p>
+    <p><strong>OTC Access:</strong> For larger trades, we connect you to vetted OTC desks — no custody, no surprises. Full privacy with regulatory clarity.</p>
+  </section>
 
-    <p><strong>Private Consultations:</strong> In-person guidance for those who want to protect their privacy, improve security, or learn to operate without third-party custodians. Topics include mobile privacy, VPNs, pseudonymous practices, operational security (OPSEC), and DeFi access. Fully tailored — whether you’re new or advanced.</p>
+  <section>
+    <h2>Why Marbella</h2>
+    <p>Marbella attracts high-net-worth individuals, crypto investors, and digital expats — yet secure, trusted onboarding is nearly nonexistent. We bridge that gap by offering in-person, high-trust crypto services in a city known for discretion and privacy.</p>
+  </section>
 
-    <p><strong>ATM Placement & Access:</strong> Want to install a Bitcoin ATM at your venue or residence? We handle everything — from sourcing machines, regulatory checks, compliance partners, to installation. We also advise private clients on where to access trusted, low-fee machines with minimal friction.</p>
-
-    <p><strong>OTC Desk Connections:</strong> Through trusted partners, we offer introductions to institutional-grade OTC desks for discreet, high-volume transactions. KYC requirements are explained clearly, and custody remains with the client at all times. We are not a broker — we are your bridge.</p>
-  </div>
-
-  <div class="section">
+  <section>
     <h2>Why Trust Us</h2>
-    <p>Crypto Concierge Marbella is built for people who value privacy, autonomy, and discretion. We never take custody of your funds or keys. We don’t store personal data. All services are delivered in person, on request, and under the strictest privacy standards.</p>
-
-    <p>Our founding team has experience in hardware wallet security, compliance advisory, and privacy-first financial tooling. We work with vetted ATM operators and service providers — no unknowns, no shortcuts, no compromises.</p>
-
-    <p>Whether you’re securing generational wealth, setting up family cold storage, or just getting started with Bitcoin, we provide clarity, confidence, and total privacy.</p>
-  </div>
+    <p>We never hold your funds, take custody of your keys, or store your personal data. All services are private, by appointment, and offline. Our advisors have experience in security architecture, wallet recovery, and financial privacy — and we work only with vetted ATM operators and desks.</p>
+  </section>
 
   <footer>
-    &copy; 2025 Crypto Concierge Marbella — All rights reserved.
+    &copy; 2025 Crypto Concierge Marbella — Privacy-first by design.
   </footer>
+
 </body>
 </html>
