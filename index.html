@@ -4,51 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Concierge Marbella</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
-    html, body {
+    :root {
+      --beige-light: #f9f6ef;
+      --beige-dark: #e9dfd2;
+      --accent: #3a3a3a;
+      --text: #2c2c2c;
+      --font-main: 'Inter', sans-serif;
+      --font-heading: 'Playfair Display', serif;
+    }
+
+    body {
       margin: 0;
       padding: 0;
-      scroll-behavior: smooth;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #f9f6ef, #e9dfd2);
-      color: #2b2b2b;
+      background: linear-gradient(to bottom right, var(--beige-light), var(--beige-dark));
+      font-family: var(--font-main);
+      color: var(--text);
     }
 
     main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 8rem 1.5rem 6rem;
-      min-height: 100vh;
       text-align: center;
+      padding: 7rem 1.5rem 4rem;
     }
 
     .logo {
-      width: 140px;
-      height: auto;
-      margin-bottom: 2.2rem;
-      display: block;
+      width: 160px;
+      margin-bottom: 2rem;
     }
 
     .tagline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.7rem;
-      max-width: 620px;
-      margin: 0 auto 3rem;
-      color: #3a3a3a;
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      color: var(--accent);
     }
 
     .cta-button {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 1.1rem 2.2rem;
+      background: #1c1c1c;
+      color: white;
+      padding: 1rem 2rem;
       font-size: 1.1rem;
       font-weight: 600;
       border: none;
       border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
       text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: background 0.3s ease;
     }
 
@@ -57,22 +59,22 @@
     }
 
     .section {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
-      padding: 5rem 1.5rem;
+      padding: 4rem 1.5rem;
     }
 
     h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.1rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.8rem;
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--accent);
     }
 
     p {
-      font-size: 1.25rem;
-      line-height: 2;
+      font-size: 1.2rem;
+      line-height: 1.9;
       margin-bottom: 2rem;
       text-align: justify;
     }
@@ -82,12 +84,13 @@
     }
 
     footer {
-      background: #f1ede4;
-      color: #888;
+      background: #f2eee6;
+      color: #666;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       padding: 2rem 1rem;
       margin-top: 4rem;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
@@ -100,15 +103,16 @@
 
   <div class="section">
     <h2>What We Do</h2>
-    <p><strong>Cold Wallet Setup:</strong> We help you configure hardware wallets (Ledger, Trezor, Passport, etc.), guide you through secure backup practices, teach you to protect your seed phrases, and offer redundant, air-gapped backup strategies. We come to you for setup — nothing is done online.</p>
+    <p><strong>Cold Wallet Setup:</strong> We help you configure hardware wallets (Ledger, Trezor, Passport, etc.), secure backups, and multisig solutions. Everything is done in-person and air-gapped — nothing leaves the room.</p>
+    <p><strong>Private Crypto Consultations:</strong> 1-on-1 guidance on crypto safety, privacy strategies, VPNs, burner phones, and operational security. Each session is customized to your risk level and experience.</p>
+    <p><strong>OTC Desk Introductions:</strong> Gain direct access to trusted OTC desks for large-volume buys and sells. We verify desk credentials and arrange compliant introductions — you hold custody, we provide the bridge.</p>
+    <p><strong>ATM Integration:</strong> We help you access or host compliant crypto ATMs in Marbella. From luxury showrooms to golf clubs, we manage the full integration with vetted partners.</p>
+  </div>
 
-    <p><strong>Private Crypto Consultations:</strong> Our 1-on-1 sessions are tailored to your needs: from navigating wallet software and mobile privacy tools, to setting up burner phones and using VPNs and multisig vaults. You’ll leave with a hardened security posture and confidence in your crypto handling.</p>
-
-    <p><strong>OTC Desk Introductions:</strong> We connect you with verified over-the-counter desks to conduct discreet, large-volume trades. These partners are vetted for security, KYC/AML compliance, and tailored service. We do not hold funds — you trade directly with the desk.</p>
-
-    <p><strong>ATM Integrations:</strong> We coordinate placements of fully compliant crypto ATMs (BTC, ETH, stablecoins) at premium venues such as golf clubs, auto dealerships, and private estates. Whether you need access or want to host one, we manage the entire process end-to-end with our ATM operator partners.</p>
-
-    <p><strong>Discretion & Privacy:</strong> We never share or store client information. Every meeting is private, off-record, and under NDA by default. We work only with serious clients and vetted partners.</p>
+  <div class="section">
+    <h2>Why Trust Us</h2>
+    <p>Crypto Concierge Marbella is built on discretion, clarity, and private-first principles. We never store client data. We don’t hold your keys or coins. Everything is done in person, offline, and on your terms.</p>
+    <p>We operate with limited clientele and form long-term relationships based on trust, not scale. Whether you're a private investor, expat, or business, we guide you with precision and confidentiality.</p>
   </div>
 
   <footer>
